@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Azicode 62</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <i class="fas fa-code me-2"></i>
+        Azicode 62
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/"><i class="fas fa-home me-1"></i> Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/formations.html"><i class="fas fa-graduation-cap me-1"></i> Formations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html"><i class="fas fa-info-circle me-1"></i> À propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/contact.html"><i class="fas fa-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="display-4 fw-bold mb-3">Contactez-nous</h1>
+          <p class="lead">Une question sur nos formations ? Envie de rejoindre notre équipe ? N'hésitez pas à nous contacter.</p>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block">
+          <img src="https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Contact Azicode" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <div class="contact-info bg-white p-4 rounded shadow-sm h-100">
+            <h2 class="mb-4">Nos coordonnées</h2>
+            
+            <div class="contact-item mb-4 d-flex">
+              <div class="contact-icon text-primary me-3">
+                <i class="fas fa-map-marker-alt fa-2x"></i>
+              </div>
+              <div>
+                <h5>Adresse</h5>
+                <p class="mb-0">123 rue de l'Innovation<br>62000 Arras<br>France</p>
+              </div>
+            </div>
+            
+            <div class="contact-item mb-4 d-flex">
+              <div class="contact-icon text-primary me-3">
+                <i class="fas fa-phone fa-2x"></i>
+              </div>
+              <div>
+                <h5>Téléphone</h5>
+                <p class="mb-0">+33 3 21 XX XX XX</p>
+              </div>
+            </div>
+            
+            <div class="contact-item mb-4 d-flex">
+              <div class="contact-icon text-primary me-3">
+                <i class="fas fa-envelope fa-2x"></i>
+              </div>
+              <div>
+                <h5>Email</h5>
+                <p class="mb-0">contact@azicode62.fr</p>
+              </div>
+            </div>
+            
+            <div class="contact-item d-flex">
+              <div class="contact-icon text-primary me-3">
+                <i class="fas fa-clock fa-2x"></i>
+              </div>
+              <div>
+                <h5>Horaires d'ouverture</h5>
+                <p class="mb-0">Lundi - Vendredi: 9h00 - 18h00<br>Samedi: 9h00 - 12h00<br>Dimanche: Fermé</p>
+              </div>
+            </div>
+            
+            <div class="social-links mt-5">
+              <h5>Suivez-nous</h5>
+              <div class="d-flex mt-3">
+                <a href="#" class="social-link bg-primary text-white me-2">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link bg-primary text-white me-2">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link bg-primary text-white me-2">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-link bg-primary text-white">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="contact-form bg-white p-4 rounded shadow-sm">
+            <h2 class="mb-4">Envoyez-nous un message</h2>
+            <form id="contact-form">
+              <div class="alert alert-success d-none" id="contact-success">
+                Votre message a été envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="name" class="form-label">Nom *</label>
+                  <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">Email *</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Sujet *</label>
+                <input type="text" class="form-control" id="subject" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message *</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="privacy" required>
+                <label class="form-check-label" for="privacy">J'accepte que mes données soient traitées selon la <a href="#">politique de confidentialité</a>.</label>
+              </div>
+              <div class="text-end">
+                <button type="submit" class="btn btn-primary px-4 py-2">
+                  <i class="fas fa-paper-plane me-2"></i> Envoyer le message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Nous trouver</h2>
+      <div class="map-container rounded shadow overflow-hidden">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20379.138280456457!2d2.7636134!3d50.2924917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dd479d689825f1%3A0x55b469da1f7bc36f!2sArras%2C%20France!5e0!3m2!1sfr!2sfr!4v1644000000000!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Questions fréquentes</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item mb-3 border rounded overflow-hidden">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Comment s'inscrire à une formation ?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Pour vous inscrire à une formation, vous pouvez nous contacter via ce formulaire, par téléphone ou par email. Nous vous enverrons ensuite un dossier d'inscription complet avec toutes les informations nécessaires. Une fois votre candidature étudiée, nous vous proposerons un entretien pour confirmer votre admission.
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item mb-3 border rounded overflow-hidden">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Les formations sont-elles éligibles au CPF ?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Oui, la plupart de nos formations sont éligibles au Compte Personnel de Formation (CPF). Vous pouvez consulter la fiche détaillée de chaque formation pour vérifier son éligibilité ou nous contacter directement pour plus d'informations sur les dispositifs de financement disponibles.
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item mb-3 border rounded overflow-hidden">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Proposez-vous des formations à distance ?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Oui, nous proposons plusieurs de nos formations en format à distance ou hybride. Notre plateforme d'apprentissage en ligne permet de suivre les cours, d'accéder aux ressources pédagogiques et d'interagir avec les formateurs. Des sessions en visioconférence sont régulièrement organisées pour maintenir la qualité pédagogique et l'interactivité.
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item border rounded overflow-hidden">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Quel est le taux d'insertion professionnelle après vos formations ?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Notre taux d'insertion professionnelle global est de 92% dans les six mois suivant la fin de la formation. Ce chiffre varie légèrement selon les formations, mais notre réseau d'entreprises partenaires et notre accompagnement personnalisé à la recherche d'emploi ou de stage contribuent significativement à ces excellents résultats.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h5 class="mb-3">Azicode 62</h5>
+          <p>Centre de formation aux métiers du numérique, spécialisé dans le développement web, mobile et le design.</p>
+          <div class="social-icons">
+            <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h5 class="mb-3">Liens rapides</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="/" class="text-white text-decoration-none">Accueil</a></li>
+            <li class="mb-2"><a href="/formations.html" class="text-white text-decoration-none">Formations</a></li>
+            <li class="mb-2"><a href="/about.html" class="text-white text-decoration-none">À propos</a></li>
+            <li><a href="/contact.html" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="mb-3">Contact</h5>
+          <p><i class="fas fa-map-marker-alt me-2"></i> 123 rue de l'Innovation, 62000 Arras</p>
+          <p><i class="fas fa-phone me-2"></i> +33 3 21 XX XX XX</p>
+          <p><i class="fas fa-envelope me-2"></i> contact@azicode62.fr</p>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 Azicode 62. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

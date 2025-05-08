@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azicode 62 - Formations</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <i class="fas fa-code me-2"></i>
+        Azicode 62
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="/"><i class="fas fa-home me-1"></i> Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/formations.html"><i class="fas fa-graduation-cap me-1"></i> Formations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html"><i class="fas fa-info-circle me-1"></i> À propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html"><i class="fas fa-envelope me-1"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section text-white text-center py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h1 class="display-4 fw-bold mb-4 animated fadeInDown">Formez-vous aux métiers du numérique</h1>
+          <p class="lead mb-4 animated fadeInUp">Découvrez nos formations professionnelles et devenez un expert du digital avec Azicode 62</p>
+          <div class="animated fadeInUp delay-1">
+            <a href="/formations.html" class="btn btn-primary btn-lg me-2 px-4 py-2">
+              <i class="fas fa-list me-2"></i> Voir nos formations
+            </a>
+            <a href="/contact.html" class="btn btn-outline-light btn-lg px-4 py-2">
+              <i class="fas fa-envelope me-2"></i> Nous contacter
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Featured Formations -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Nos formations à la une</h2>
+      <div class="row" id="featured-formations">
+        <!-- Dynamic content will be loaded here -->
+        <div class="text-center">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Chargement...</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="/formations.html" class="btn btn-outline-primary">
+          <i class="fas fa-graduation-cap me-2"></i> Toutes nos formations
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="image-container rounded overflow-hidden mb-4 mb-lg-0">
+            <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Formation Azicode" class="img-fluid rounded shadow">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <h2 class="mb-4">Pourquoi choisir Azicode 62 ?</h2>
+          <div class="feature-item mb-4 d-flex">
+            <div class="feature-icon text-primary me-3">
+              <i class="fas fa-user-tie fa-2x"></i>
+            </div>
+            <div>
+              <h5>Formateurs experts</h5>
+              <p>Nos formateurs sont des professionnels reconnus dans leur domaine avec une expérience concrète du terrain.</p>
+            </div>
+          </div>
+          <div class="feature-item mb-4 d-flex">
+            <div class="feature-icon text-primary me-3">
+              <i class="fas fa-laptop-code fa-2x"></i>
+            </div>
+            <div>
+              <h5>Pédagogie pratique</h5>
+              <p>Nos formations sont axées sur la pratique avec des projets concrets qui reflètent les besoins du marché.</p>
+            </div>
+          </div>
+          <div class="feature-item mb-4 d-flex">
+            <div class="feature-icon text-primary me-3">
+              <i class="fas fa-certificate fa-2x"></i>
+            </div>
+            <div>
+              <h5>Certification reconnue</h5>
+              <p>Obtenez une certification reconnue par les employeurs et valorisez votre parcours professionnel.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Ce que disent nos étudiants</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card testimonial-card h-100">
+            <div class="card-body">
+              <div class="testimonial-rating text-warning mb-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="card-text">"La formation en développement web a complètement changé ma carrière. Les cours étaient bien structurés et les projets très concrets."</p>
+            </div>
+            <div class="card-footer bg-white">
+              <div class="d-flex align-items-center">
+                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sophie Martin" class="testimonial-img rounded-circle me-3">
+                <div>
+                  <h5 class="mb-0">Sophie Martin</h5>
+                  <small class="text-muted">Développeuse Frontend</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card testimonial-card h-100">
+            <div class="card-body">
+              <div class="testimonial-rating text-warning mb-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="card-text">"Les formateurs sont de vrais professionnels qui partagent leur expérience concrète. J'ai pu trouver un emploi dès la fin de ma formation."</p>
+            </div>
+            <div class="card-footer bg-white">
+              <div class="d-flex align-items-center">
+                <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Thomas Dubois" class="testimonial-img rounded-circle me-3">
+                <div>
+                  <h5 class="mb-0">Thomas Dubois</h5>
+                  <small class="text-muted">Développeur Full Stack</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card testimonial-card h-100">
+            <div class="card-body">
+              <div class="testimonial-rating text-warning mb-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="card-text">"L'accompagnement personnalisé m'a permis de progresser rapidement. Je recommande vivement Azicode pour sa qualité pédagogique."</p>
+            </div>
+            <div class="card-footer bg-white">
+              <div class="d-flex align-items-center">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Léa Bernard" class="testimonial-img rounded-circle me-3">
+                <div>
+                  <h5 class="mb-0">Léa Bernard</h5>
+                  <small class="text-muted">UX/UI Designer</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h5 class="mb-3">Azicode 62</h5>
+          <p>Centre de formation aux métiers du numérique, spécialisé dans le développement web, mobile et le design.</p>
+          <div class="social-icons">
+            <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h5 class="mb-3">Liens rapides</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="/" class="text-white text-decoration-none">Accueil</a></li>
+            <li class="mb-2"><a href="/formations.html" class="text-white text-decoration-none">Formations</a></li>
+            <li class="mb-2"><a href="/about.html" class="text-white text-decoration-none">À propos</a></li>
+            <li><a href="/contact.html" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="mb-3">Contact</h5>
+          <p><i class="fas fa-map-marker-alt me-2"></i> 123 rue de l'Innovation, 62000 Arras</p>
+          <p><i class="fas fa-phone me-2"></i> +33 3 21 XX XX XX</p>
+          <p><i class="fas fa-envelope me-2"></i> contact@azicode62.fr</p>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 Azicode 62. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
