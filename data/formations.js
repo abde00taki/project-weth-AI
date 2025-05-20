@@ -9,7 +9,7 @@ export const formations = [
     price: 2500,
     level: 'Débutant',
     category: 'Développement Web',
-    image: 'img/formation-frontend.jpg',
+    image: 'img/frontend.jpeg',
     details: 'Cette formation complète vous permettra de maîtriser les bases du développement web frontend. Vous apprendrez à créer des sites web responsifs et interactifs en utilisant les technologies standards du web. Le programme couvre HTML5, CSS3, JavaScript ES6+, ainsi que des frameworks populaires comme Bootstrap et introduction à React.'
   },
   {
@@ -20,7 +20,7 @@ export const formations = [
     price: 2800,
     level: 'Intermédiaire',
     category: 'Développement Web',
-    image: 'img/formation-backend.jpg',
+    image: 'img/backend.jpeg',
     details: 'Cette formation intensive en développement backend avec Node.js vous permettra de créer des API RESTful robustes et des applications serveur performantes. Vous découvrirez comment utiliser Express.js, gérer les bases de données avec MongoDB, et implémenter l\'authentification et l\'autorisation. La sécurité et les bonnes pratiques seront abordées tout au long du cours.'
   },
   {
@@ -31,7 +31,7 @@ export const formations = [
     price: 3200,
     level: 'Avancé',
     category: 'Développement Mobile',
-    image: 'img/formation-mobile.jpg',
+    image: 'img/monile.jpeg',
     details: 'Cette formation avancée vous permettra de développer des applications mobiles multiplateformes avec React Native. Vous apprendrez à créer des interfaces utilisateur natives, à gérer l\'état de l\'application, à interagir avec les API natives des appareils et à déployer vos applications sur les stores. Des projets pratiques vous permettront de maîtriser le développement mobile moderne.'
   },
   {
